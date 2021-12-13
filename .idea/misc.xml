@@ -22,8 +22,9 @@
         <entry key="..\:/Multi-module-NavGraph/movies/src/main/res/layout/fragment_movie_list.xml" value="0.3390625" />
         <entry key="..\:/Multi-module-NavGraph/movies/src/main/res/menu/details_menu.xml" value="0.2760416666666667" />
         <entry key="..\:/Multi-module-NavGraph/movies/src/main/res/menu/home_back.xml" value="0.3390625" />
-        <entry key="..\:/Multi-module-NavGraph/series/src/main/res/layout/fragment_details.xml" value="0.3390625" />
+        <entry key="..\:/Multi-module-NavGraph/series/src/main/res/layout/fragment_details.xml" value="0.25" />
         <entry key="..\:/Multi-module-NavGraph/series/src/main/res/layout/fragment_list.xml" value="0.3390625" />
+        <entry key="..\:/Multi-module-NavGraph/series/src/main/res/layout/fragment_more_details.xml" value="0.2864583333333333" />
       </map>
     </option>
   </component>

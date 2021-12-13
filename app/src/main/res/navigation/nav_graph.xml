@@ -8,10 +8,23 @@
         android:id="@+id/optionsFragment"
         android:name="com.saiful.multi_module_navgraph.OptionsFragment"
         android:label="Options"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_optionsFragment_to_movie_nav_graph"
+            app:destination="@id/movie_nav_graph" />
+        <action
+            android:id="@+id/action_optionsFragment_to_series_nav_graph"
+            app:destination="@id/series_nav_graph" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.saiful.multi_module_navgraph.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_third" />
+
+
+    <include app:graph = "@navigation/movie_nav_graph" />
+
+    <include app:graph = "@navigation/series_nav_graph"  />
+
 </navigation>

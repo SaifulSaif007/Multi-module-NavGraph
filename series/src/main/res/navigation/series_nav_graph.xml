@@ -18,5 +18,14 @@
         android:id="@+id/detailsFragment"
         android:name="com.saiful.series.DetailsFragment"
         android:label="Series Details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_moreDetailsFragment"
+            app:destination="@id/moreDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreDetailsFragment"
+        android:name="com.saiful.series.MoreDetailsFragment"
+        android:label="More Details"
+        tools:layout="@layout/fragment_more_details" />
 </navigation>

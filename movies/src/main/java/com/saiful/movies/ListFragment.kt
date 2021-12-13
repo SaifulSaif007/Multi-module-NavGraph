@@ -1,5 +1,6 @@
 package com.saiful.movies
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -22,6 +23,7 @@ class ListFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_movie_list, container, false)
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -31,8 +33,5 @@ class ListFragment : Fragment() {
             findNavController().navigate(R.id.action_movieListFragment_to_movieDetailsFragment)
         }
 
-        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
-
-
 }
