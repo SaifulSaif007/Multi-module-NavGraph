@@ -18,7 +18,15 @@ class SeriesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_series)
 
-    }
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.seriesFragmentContainerView) as NavHostFragment
+        navController = navHostFragment.findNavController()
 
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController , appBarConfiguration)
+
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
+    }
 
 }
